@@ -110,7 +110,7 @@ void merge(vector<iostream *> &input, iostream &output, int chunkSize)
 
         for (auto iter = buffer.begin(); iter != buffer.end();)
         {
-            if (*iter == 0 || *iter == 255)
+            if (*iter == 0)
                 iter = buffer.erase(iter);
             else
                 ++iter;
